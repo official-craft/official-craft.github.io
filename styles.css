@@ -1,0 +1,183 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-image: radial-gradient(#ededed 50%, white 100%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/bg.png");
+  background-size: 5vw;
+  background-attachment: fixed;
+  animation: bgMove 80s infinite;
+}
+
+@keyframes bgMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 50vw 50vw;
+  }
+}
+
+.cont {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.inner {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+h1 {
+  color: crimson;
+  font-size: 3.5vw;
+  margin: 0;
+}
+
+p {
+  font-size: 1.8vw;
+  color: #333;
+  margin-top: -.4vw;
+}
+
+a.url {
+  color: crimson;
+  transition: .4s;
+}
+
+a.url:hover {
+  color: firebrick;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.8vw;
+  color: crimson;
+  border: .2vw solid crimson;
+  padding: .5vw 1.7vw;
+  border-radius: 5vw;
+  transition: .4s;
+  position: relative;
+  bottom: .3vw;
+}
+
+.btn:hover {
+  color: white;
+  background: crimson;
+  bottom: .7vw;
+}
+
+.ibtn {
+  font-size: 2.5vw;
+  position: relative;
+  top: -1.7vw;
+  color: #333;
+  transition: .4s;
+  margin-right: 1vw;
+}
+
+.ibtn:hover {
+  color: crimson;
+  top: -2vw;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  right: 2vw;
+  top: 1vw;
+  z-index: 1000;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  font-size: 1.5vw;
+  color: #333;
+  text-decoration: none;
+  margin-right: 2vw;
+  transition: .4s;
+}
+
+.navbar a:hover, .navbar a.active {
+  color: crimson;
+}
+
+@media only screen and (orientation: portrait) {
+  
+  body {
+    background-size: 8vh;
+  }
+  
+  .inner {
+    width: 64vw;
+    margin-left: 10vw;
+  }
+  
+  h1 {
+    font-size: 5vh;
+  }
+  
+  p {
+    font-size: 2.5vh;
+  }
+  
+  .ibtn {
+    font-size: 4vh;
+    top: -2vh;
+  }
+  
+  .ibtn:hover {
+    top: -2.5vh;
+  }
+  
+  .btn {
+    font-size: 2.5vh;
+    padding: .8vh 2.5vh;
+    border: .2vh solid crimson;
+    bottom: 0;
+  }
+  
+  .btn:hover {
+    bottom: .7vh;
+  }
+  
+  .navbar {
+    text-align: right;
+    margin: 1vh;
+  }
+  
+  .navbar li {
+    display: block;
+  }
+  
+  .navbar a {
+    font-size: 2.5vh;
+  }
+
+}
