@@ -51,7 +51,7 @@ body {
 }
 
 h1 {
-  color: crimson;
+  color: #ea1414;
   font-size: 3.5vw;
   margin: 0;
 }
@@ -63,7 +63,7 @@ p {
 }
 
 a.url {
-  color: crimson;
+  color: #ea1414;
   transition: .4s;
 }
 
@@ -74,8 +74,8 @@ a.url:hover {
 .btn {
   text-decoration: none;
   font-size: 1.8vw;
-  color: crimson;
-  border: .2vw solid crimson;
+  color: #ea1414;
+  border: .2vw solid #ea1414;
   padding: .5vw 1.7vw;
   border-radius: 5vw;
   transition: .4s;
@@ -85,7 +85,7 @@ a.url:hover {
 
 .btn:hover {
   color: white;
-  background: crimson;
+  background: #ea1414;
   bottom: .7vw;
 }
 
@@ -99,7 +99,7 @@ a.url:hover {
 }
 
 .ibtn:hover {
-  color: crimson;
+  color: #ea1414;
   top: -2vw;
 }
 
@@ -125,7 +125,7 @@ a.url:hover {
 }
 
 .navbar a:hover, .navbar a.active {
-  color: crimson;
+  color: #ea1414;
 }
 
 @media only screen and (orientation: portrait) {
@@ -159,7 +159,7 @@ a.url:hover {
   .btn {
     font-size: 2.5vh;
     padding: .8vh 2.5vh;
-    border: .2vh solid crimson;
+    border: .2vh solid #ea1414;
     bottom: 0;
   }
   
